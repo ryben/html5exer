@@ -1,0 +1,453 @@
+/*<!-- REY Y. BENEDICTO -->
+<!-- 2011-31260 -->
+<!-- CMSC 100 - EF-4L -->
+<!-- EXERCISE 4 -->*/
+
+
+@-webkit-keyframes rotate{
+	from {-webkit-transform: rotate(0deg);}
+	to {-webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes road_move{
+	from {-webkit-transform: translate(0,0);}
+	to {-webkit-transform: translate(-168px,0);}
+}
+
+
+@-webkit-keyframes car_move{
+	from {-webkit-transform: translate(0,0);}
+	to {-webkit-transform: translate(4000px,0);}
+}
+
+@-webkit-keyframes car_move2{
+	from {-webkit-transform: translate(-1000px,0);}
+	to {-webkit-transform: translate(3000px,0);}
+}
+
+
+
+
+
+
+
+@-webkit-keyframes tonight{
+	0% {opacity: 1; -webkit-transform: translate(-100px,-200px);}
+	33% {opacity: 0; -webkit-transform: translate(0px,-400px);}
+	66% {opacity: 0; -webkit-transform: translate(-200px,0px);}
+	100% {opacity: 1; -webkit-transform: translate(-100px,-200px);}
+}
+
+@-webkit-keyframes sunRotate{
+	from {-webkit-transform: rotate(-135deg);}
+	to {-webkit-transform: rotate(225deg) ;}
+}
+
+
+
+
+
+
+@-webkit-keyframes moonPhase{
+	0% {margin-left: 0%;}
+	12% {margin-left: -25%;border-radius: 50%;background-color: yellow;}
+	25% {margin-left: 50%;border-radius: 0%; background-color: rgb(50,50,0);}
+	37% {margin-left: 25%;border-radius: 50%;}
+	50% {margin-left: 0%;border-radius: 50%;}
+	62% {margin-left: -25%;border-radius: 50%; background-color: rgb(50,50,0);}
+	75% {margin-left: 50%;border-radius: 0%;background-color: yellow;}
+	87% {margin-left: 25%;border-radius: 50%;background-color: yellow;}
+	100% {margin-left: 0%;border-radius: 50%;background-color: yellow;}
+} 
+@-webkit-keyframes moonContainerPhase{
+	12% {background-color: rgb(50,50,0);}
+	25% {background-color: yellow;}
+	37% {background-color: yellow;}
+	50% {background-color: rgb(50,50,0);}
+	62% {background-color: yellow;}
+	75% {background-color: rgb(50,50,0);}
+} 
+
+
+
+
+
+
+@-webkit-keyframes moveMountain{
+	from {-webkit-transform: translate(0px, 0px);}
+	to {-webkit-transform: translate(-1640px, 0px);}
+}
+
+@-webkit-keyframes opacs{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+
+
+/*================================================================================================================*/
+
+
+@keyframes rotate{
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+@keyframes road_move{
+	from {transform: translate(0,0);}
+	to {transform: translate(-168px,0);}
+}
+
+
+@keyframes car_move{
+	from {transform: translate(0,0);}
+	to {transform: translate(4000px,0);}
+}
+
+@keyframes car_move2{
+	from {transform: translate(-1000px,0);}
+	to {transform: translate(3000px,0);}
+}
+
+
+
+
+
+
+
+@keyframes tonight{
+	0% {opacity: 1; transform: translate(-100px,-200px);}
+	33% {opacity: 0; transform: translate(0px,-400px);}
+	66% {opacity: 0; transform: translate(-200px,0px);}
+	100% {opacity: 1; transform: translate(-100px,-200px);}
+}
+
+@keyframes sunRotate{
+	from {transform: rotate(-135deg);}
+	to {transform: rotate(225deg) ;}
+}
+
+
+
+
+
+
+@keyframes moonPhase{
+	0% {margin-left: 0%;}
+	12% {margin-left: -25%;border-radius: 50%;background-color: yellow;}
+	25% {margin-left: 50%;border-radius: 0%; background-color: rgb(50,50,0);}
+	37% {margin-left: 25%;border-radius: 50%;}
+	50% {margin-left: 0%;border-radius: 50%;}
+	62% {margin-left: -25%;border-radius: 50%; background-color: rgb(50,50,0);}
+	75% {margin-left: 50%;border-radius: 0%;background-color: yellow;}
+	87% {margin-left: 25%;border-radius: 50%;background-color: yellow;}
+	100% {margin-left: 0%;border-radius: 50%;background-color: yellow;}
+} 
+@keyframes moonContainerPhase{
+	12% {background-color: rgb(50,50,0);}
+	25% {background-color: yellow;}
+	37% {background-color: yellow;}
+	50% {background-color: rgb(50,50,0);}
+	62% {background-color: yellow;}
+	75% {background-color: rgb(50,50,0);}
+} 
+
+
+
+
+
+
+@keyframes moveMountain{
+	from {transform: translate(0px, 0px);}
+	to {transform: translate(-1640px, 0px);}
+}
+
+@keyframes opacs{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+/*================================================================================================================*/
+
+
+
+body{
+	background-color: black;	
+}
+
+#me{
+	margin-left: 1.8%;
+	color: white;
+	text-shadow: 0 0 10px black;
+}
+
+#all{
+	background-color: blue ;
+	width: 1000px;
+	height: 500px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#container{
+	position: relative;
+	background-color: rgb(160,170,255);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+[pos="abs"]{
+	position: absolute;
+}
+
+
+/*STOP LIGHT ============================================================ */
+
+
+.Holder{
+	box-shadow: 2px 2px 10px black;
+	background-color: rgb(10,10,10);
+}
+
+
+
+#stoplight{
+	background-color: black;
+	width: 67px;
+	height: 150px;
+	margin-top: 7%;
+	margin-left: 92.4%;
+	border-radius: 25%;
+}
+#stand{
+	width: 25px;
+	height: 120px;
+	margin-top: 22%;
+	margin-left: 94.7%;
+	border-radius: 15%;
+}
+#base{
+	width: 150px;
+	height: 55px;
+	margin-top: 30%;
+	margin-left: 91%;
+	border-radius: 28%;
+	background-color: rgb(15,5,5);
+}
+#stoplightWheel{
+	width: 52px;
+	height: 52px;
+	margin-top: 32%;
+	margin-left: 93.3%;
+	-webkit-animation: rotate linear 1s infinite;
+	animation: rotate linear 1s infinite;
+}
+
+
+#red{
+	background-color: rgb(255,0,0);
+	margin-top: 10%;
+	box-shadow: 2px 2px 2px rgb(55,20,20);
+	opacity: 0.4;
+}
+#green{
+	background-color: rgb(0,255,0);
+	margin-top: 16.4%;
+	box-shadow: 2px 2px 2px rgb(20,55,20);
+	opacity: 1;
+}
+
+.light{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin-left: 94%;
+	border-radius: 50%;
+}
+
+#red:hover{
+	opacity: 1;
+}
+#red:hover ~ #green{
+	opacity: 0.4;
+}
+
+
+
+#red:hover ~ [stop="1"]{	
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+#red:hover ~ #car1wheels{margin-left: -999px;}
+#red:hover ~ #car2wheels{margin-left: -999px;}
+#red:hover ~ #car3wheels{margin-left: -999px;}
+#red:hover ~ #car4wheels{margin-left: -999px;}
+
+
+/*Road ============================================================ */
+#roadsContainer{
+	margin-top: 36%;
+	-webkit-animation: road_move linear 1s infinite;
+	animation: road_move linear 1s infinite;
+}
+
+#roadContainer{
+	-webkit-animation: opacs linear 10s infinite alternate;
+	animation: opacs linear 10s infinite alternate;
+}
+
+#roadShadow{
+	box-shadow: 0 -3px 10px black;
+}
+
+
+/* CARS ============================================================ */
+#car1{
+	margin-top: 33%;
+	margin-left: -40%;
+}
+#car1w1{margin-left: -37.2%;}
+#car1w2{margin-left: -19.3%;}
+[wheel="1"]{
+	width: 52px;
+	height: 52px;
+	margin-top: 43%;
+	-webkit-animation: rotate linear 0.95s infinite;
+	animation: rotate linear 0.95s infinite;
+}
+[speed="1"]{
+	-webkit-animation: car_move linear 45s infinite;
+	animation: car_move linear 45s infinite;
+}
+
+
+#car2{
+	margin-top: 27%;
+	margin-left: -30%;
+}
+#car2w1{margin-left: -24%;}
+#car2w2{margin-left: -8.35%;}
+[wheel="2"]{
+	width: 54px;
+	height: 54px;
+	margin-top: 36.6%;
+	-webkit-animation: rotate linear 0.70s infinite;
+	animation: rotate linear 0.70s infinite;
+}
+[speed="2"]{
+	-webkit-animation: car_move linear 30s infinite;
+	animation: car_move linear 30s infinite;
+}
+
+
+
+
+#car3{
+	margin-top: 27%;
+	margin-left: -30%;
+}
+#car3w1{margin-left: -25.3%;}
+#car3w2{margin-left: -10%;}
+[speed="3"]{
+	-webkit-animation: car_move2 linear 30s infinite;
+	animation: car_move2 linear 30s infinite;
+}
+
+
+
+#car4{
+	margin-top: 33%;
+	margin-left: -40%;
+}
+#car4w1{margin-left: -37.7%;}
+#car4w2{margin-left: -20%;}
+[wheel="4"]{
+	width: 54px;
+	height: 54px;
+	margin-top: 42.5%;
+	-webkit-animation: rotate linear 0.95s infinite;
+	animation: rotate linear 0.95s infinite;
+}
+[speed="4"]{
+	-webkit-animation: car_move2 linear 45s infinite;
+	animation: car_move2 linear 45s infinite;
+}
+
+
+
+
+
+/* SKY =================================================*/
+
+
+#night{
+	-webkit-animation: tonight linear 20s infinite;
+	animation: tonight linear 20s infinite;
+}
+
+#sunMoonContainer{
+	/*background-color: black;*/
+	width: 1500px;
+	height: 100px;
+	margin-left: 15%;
+	margin-top: 50%;
+	-webkit-animation: sunRotate linear 20s infinite;
+	animation: sunRotate linear 20s infinite;
+	-webkit-transform: rotate(210deg) ;
+	transform: rotate(210deg) ;
+}
+
+#sun{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border-radius: 50%;
+	box-shadow: 0 0 200px yellow;
+}
+
+
+#moonContainer{
+	width: 100px;
+	height: 100px;
+	margin-left: 93.3%;
+	background-color: rgb(50,50,0);
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 100px yellow;
+	-webkit-animation: moonContainerPhase linear 160s infinite;
+	animation: moonContainerPhase linear 160s infinite;
+}
+
+#moon{
+	width: 100px;
+	height: 100px;
+	margin-left: -25%;
+	background-color: yellow;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 50px yellow;
+	-webkit-animation: moonPhase linear 160s infinite;
+	animation: moonPhase linear 160s infinite;
+}
+
+
+#mountainsContainer{
+	width: 1000px;
+	height: 200px;
+	margin-top: 23.4%;
+	-webkit-animation: moveMountain linear 50s infinite;
+	animation: moveMountain linear 50s infinite;
+}
+
+#mountainContainer{
+	width: 1000px;
+	height: 200px;
+	-webkit-animation: opacs linear 10s infinite alternate;
+	animation: opacs linear 10s infinite alternate;
+	opacity: 1;
+}
+
